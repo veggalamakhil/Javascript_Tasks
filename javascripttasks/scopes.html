@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>THREE TYPES OF SCOPES IN Javascript</h1>
+    <h3>Global scope</h3>
+    <h3>Function scope</h3>
+    <h3>Block scope</h3>
+    <script>
+        
+    // Global Scope
+    var Apple = "red"
+        let Orange = "orangish"
+        const Banana = "Yellowish"
+
+        function fruit(){
+            document.write(Apple,"<br>")
+            document.write(Orange,"<br>")
+            document.write(Banana)
+        }
+        fruit()
+
+
+    
+    // Function Scope
+    function greet(){
+        var a = "minerals"
+        let b = "proteins"
+        document.write(a,"<br>")
+        document.write(b)
+    }
+    greet()
+    
+
+    // Block Scope
+    function sports(){
+        if (10<20){
+            var a = "akhil"
+            let k = "karthik"
+            const v = "veggalam"
+
+            // document.write(k)
+        document.write(k)
+        document.write(v)
+        }
+        document.write(a)
+    }
+    sports()
+    </script>
+</body>
+</html>

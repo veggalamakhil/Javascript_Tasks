@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Array Methods</h1>
+
+    <script>
+
+// push = (adds one or more elements to an end of the array and return the new length)--------------------
+
+        // let sports = ["cricket","football"]
+
+        // sports.push("hockey")
+
+        // document.write(sports,"<br>")
+        // document.write(sports.length)
+
+
+// pop() = (removes the last element from an array and return that element)--------------------------------
+
+        // let books = ["english","maths","social"]
+
+        // let b = books.pop()
+
+        // document.write(books,"<br>")
+        // document.write("count is : ",books.length,"<br>")
+        // document.write("Deleted element is ",b)
+
+
+// shift() = (removes first element from the array and returns that element)-------------------------------
+
+        // let states = ["mumbai","hyderabad","chennai"]
+
+        // let s = states.shift()
+
+        // document.write("states : ",states,"<br>")
+        // document.write("count : ",states.length,"<br>")
+        // document.write("deleted state : ",s)
+
+
+// unshift() = (adds one or more elements to the begining of te array and returns new length)---------------
+
+        // let bats = ["CEAT","MRF","HERO"]
+
+        // let b = bats.unshift("BOSS")
+
+        // document.write("bats : ",bats,"<br>")
+        // document.write("count : ",bats.length)
+        
+
+// concat() = (add one or more arrays and return a new array)----------------------------------------------
+
+        // let players = ["akhil","pandu","karthik","chintu"]
+
+        // let scores = [45,55,65,75]
+
+        // let add = players.concat(scores)
+
+        // document.write(add)
+
+
+// join() = (creates a new  string by concatenating all the  elements of an array and----------------------
+//           returns a string by a specified separator)
+
+
+        // let team = [45,12,55,"akhil","pandu","karthik"]
+
+        // let myTeam = team.join(" ")
+
+        // document.write(myTeam)
+
+
+// slice() = (Returns a shallow copy of a portion of an array into a new array)--------------------------
+
+        // let students = ["akhil","karthik","venkat",45,65,85,25]
+
+        // let mystudents = students.slice(0,3)
+
+        // document.write(mystudents)
+
+
+
+// splice() = (changes the contents of an array by removing, replacing, or adding element)-----------------
+
+        // let numbers = [1,2,3,4,5,6,7,8,9]
+
+        // let mynumbers = numbers.splice(1,4,"akhil")
+
+        // let mynumbers = numbers.splice(4,1,"akhil") //means skip the 4 and add akhil in that place
+
+        // let mynumbers = numbers.splice(4,1,"akhil") //means it does not skip the number but add akhil in that place
+
+        // document.write(numbers,"<br>")
+
+        // document.write(mynumbers)
+
+
+
+// indexof() = (Returns the first index at which a given element can be found in an array,-----------------
+//  or -1 if it is not present)
+
+//      let student = ["akhil","chintu","karthik","pandu","venkat"]
+
+//      var newstudent = student.indexOf("veggalam")
+
+//      if (newstudent=== -1){
+//         student.push("veggalam")
+//      }
+
+//      document.write(student)
+
+
+
+// foreach() = (executes a provided function once for each array element)----------------------------------
+
+
+// let scores = [10,20,30,40,50]
+
+// // let students = ["akhil","chintu","pandu","karthik","veggalam"]
+
+// // students.forEach(function(item, index){
+// //         document.write(index + 1 + "." + item + "<br>")
+// // })
+
+
+// // scores.forEach(function(value){
+// //         document.write(value * 2 + " ")
+// // })
+
+
+
+// multidimension array---------------------------------------------------------------------------
+ 
+// let marks = [   
+                
+//                 [
+
+//                         ["akhil","chintu","pandu"],
+//                         ["karthik","veggalam"]
+
+//                 ],
+//                 [10, 20, 30],
+//                 [40, 50, 60],
+//                 [70, 80, 90],
+//                 [100, 110, 120]
+
+//     ]
+
+// document.write("my expected result : " + marks[0][1][1])
+
+
+
+    </script>
+
+</body>
+</html>

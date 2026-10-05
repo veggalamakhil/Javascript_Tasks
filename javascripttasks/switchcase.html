@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Name = prompt("Enter your Name ")
+        var marks = prompt("Enter your marks ")
+        switch(true){
+            case marks >90 :
+             res="Great"
+             break;
+            case marks>70 :
+            res="Good"
+            break;
+            case marks>50 :
+            res="avg"
+            break;
+            case marks>30 :
+            res="low"
+            break;
+            default:
+                res="bad"
+        }
+
+document.write("Hello ",Name," your ",res,"marks",marks)
+    </script>
+</body>
+</html>

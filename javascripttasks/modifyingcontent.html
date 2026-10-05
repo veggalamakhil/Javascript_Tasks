@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome to Javascript</h1>
+    <button onclick="set()">inner-text</button>
+    <button onclick="get()">inner-HTML</button>
+
+
+
+    <script>
+
+       function set(){
+         document.getElementById("heading").innerText="<h1>Hello..! Goodmorning</h1>"
+        
+       }
+
+       function get(){
+        document.getElementById("heading").innerHTML="<h1>Hello..! Goodevening</h1>"
+       }
+
+    </script>
+</body>
+</html>
