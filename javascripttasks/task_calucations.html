@@ -4,6 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+        }
+
+        main {
+            padding: 24px;
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #00000018;
+        }
+
+        input {
+            padding: 6px;
+        }
+
+        button {
+            margin: 3px;
+            padding: 7px 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .add-button {
+            background: red;
+            color: white;
+        }
+
+        .sub-button {
+            background: yellow;
+            color: black;
+        }
+
+        .mul-button {
+            background: green;
+            color: white;
+        }
+
+        .div-button {
+            background: orange;
+            color: black;
+        }
+
+        .mod-button {
+            background: pink;
+            color: black;
+        }
+
+        .exp-button {
+            background: yellowgreen;
+            color: black;
+        }
+    </style>
     <script>
         function add(){
             var a = parseInt(document.getElementById("num1").value)
@@ -56,21 +116,23 @@
     </script>
 </head>
 <body>
-    <h1>Basic Calculations</h1>
-    <label>Enter number : </label>
-    <input type="text" id="num1"><br>
-    <br>
-    <label>Enter number : </label>
-    <input type="text" id="num2"><br>
-    <br>
-    <label>Result : </label>
-    <input type="text" id="res" readonly><br>
-    <br>
-    <button onclick="add()">Add</button>
-    <button onclick="sub()">Sub</button>
-    <button onclick="mul()">Mul</button>
-    <button onclick="div()">Div</button>
-    <button onclick="mod()">Mod</button>
-    <button onclick="exp()">exp</button>
+    <main>
+        <h1>Basic Calculations</h1>
+        <label>Enter number 1: </label>
+        <input type="text" id="num1"><br>
+        <br>
+        <label>Enter number 2: </label>
+        <input type="text" id="num2"><br>
+        <br>
+        <label>Result : </label>
+        <input type="text" id="res" readonly><br>
+        <br>
+        <button class="add-button" onclick="add()">Add</button>
+        <button class="sub-button" onclick="sub()">Sub</button>
+        <button class="mul-button" onclick="mul()">Mul</button>
+        <button class="div-button" onclick="div()">Div</button>
+        <button class="mod-button" onclick="mod()">Mod</button>
+        <button class="exp-button" onclick="exp()">exp</button>
+    </main>
 </body>
 </html>
